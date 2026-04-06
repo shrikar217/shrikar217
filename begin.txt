@@ -15,3 +15,65 @@ SysAdmin -- Stability & Maintenance -- "Is the server healthy and secure?"
 Network Admin -- Connectivity & Flow -- "Can Point A talk to Point B efficiently?"
 Cloud Engineer --  Architecture & Scale -- "Is this resource optimized and cost-effective?"
 DevOps Engineer -- Speed & Automation -- "Can we deploy this reliably in 5 minutes?"
+
+/// Phase 0 : Get good at Resume ///
+------------------------------------
+
+/// Phase 1: The Foundation (SysAdmin & Networking) /// 
+-------------------------------------------------------
+Goal: Understand how a single computer and a simple network actually work.
+
+Operating Systems (Linux is King): Learn the Linux filesystem, permissions (chmod/chown), process management (systemd), and package managers (apt/yum).
+
+Networking Fundamentals: Master the OSI Model (specifically Layers 2, 3, 4, and 7). You must understand DNS, DHCP, TCP/IP, and Subnetting (IPv4/IPv6).
+
+Scripting: Learn Bash for automation and Python for logic.
+
+The Project:
+
+Home Lab / Local Server: Take an old laptop or a Raspberry Pi. Install Proxmox or Ubuntu Server. Host a local website, set up a Pi-hole for network-wide ad blocking, and configure a VPN (Wireguard) to access it remotely.
+
+/// Phase 2: Enterprise Networking & Security ///
+--------------------------------------------------
+
+Goal: Move from "it works on my machine" to "it works securely for 1,000 users."
+
+Enterprise Gear: Learn about Firewalls (PFSense/Cisco), Load Balancers, and VLANs.
+
+Identity Management: Understand Active Directory (AD) or LDAP and IAM (Identity and Access Management) roles.
+
+Security: Learn SSH hardening, SSL/TLS certificates, and basic pentesting concepts (how to close open ports).
+
+The Project:
+
+The Secure DMZ: Set up a virtualized network with a firewall. Create a "Public" subnet for a web server and a "Private" subnet for a database. Ensure only the web server can talk to the database—nothing else.
+
+/// Phase 3: Cloud Engineering ///
+----------------------------------
+Goal: Abstract the hardware and manage infrastructure via APIs.
+
+Major Provider: Pick one (AWS or Azure). Don't try to learn both at once.
+
+Core Services: Master Compute (EC2/VMs), Storage (S3/Blob), and Networking (VPC/VNets).
+
+Infrastructure as Code (IaC): This is the bridge to DevOps. Learn Terraform. Stop clicking buttons in the console; write the code to build the cloud.
+
+The Project:
+
+The Cloud Resume: Deploy a static website (HTML/CSS) on S3/Blob storage with a custom domain, HTTPS (CloudFront/CDN), and a hit counter using a serverless function (Lambda/Azure Functions). Deploy this entirely using Terraform.
+
+/// Phase 4: DevOps & Orchestration ///
+--------------------------------------
+Goal: Automate the entire lifecycle of software.
+
+CI/CD: Learn GitHub Actions or GitLab CI. Automate testing and deployment.
+
+Containers: Learn Docker. Understand how to "containerize" an application so it runs anywhere.
+
+Orchestration: Learn Kubernetes (K8s). This is the industry standard for managing containers at scale.
+
+Observability: Learn Prometheus and Grafana to monitor if things are actually running.
+
+The Project:
+
+The Full Pipeline: Create a simple Python app. Every time you "git push," a GitHub Action should: 1. Run tests, 2. Build a Docker image, 3. Push it to a registry, and 4. Deploy it to a Kubernetes cluster (use Minikube for local or EKS/AKS for cloud).

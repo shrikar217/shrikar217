@@ -8,3 +8,10 @@ Day 1 @ April 6th 2026
 - Projects should be implemented and understood.
 
 -  How to get good at what I am doing?
+
+
+RoleCore - FocusKey - Mental Model
+SysAdmin -- Stability & Maintenance -- "Is the server healthy and secure?"
+Network Admin -- Connectivity & Flow -- "Can Point A talk to Point B efficiently?"
+Cloud Engineer --  Architecture & Scale -- "Is this resource optimized and cost-effective?"
+DevOps Engineer -- Speed & Automation -- "Can we deploy this reliably in 5 minutes?"
